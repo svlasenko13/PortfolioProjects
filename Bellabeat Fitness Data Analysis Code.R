@@ -128,8 +128,3 @@ legend("bottomleft", legend = ActiveMinutes, fill = brewer.pal(4,"Blues"))
 #5
 daily_activity_merged <- merge(dailyActivity, sleepDay_merged, by = 'Id')
 View(daily_activity_merged)
-
-ggsave(Sleep_Calories, file = "Daily_Minutes_Slept_And_Calories_Burned.png" )
-
-
-install.packages("rmarkdown")
